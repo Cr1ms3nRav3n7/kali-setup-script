@@ -69,8 +69,8 @@ apt install golang -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install ./google-chrome-stable_current_amd64.deb -y
 rm google-chrome-stable_current_amd64.deb
-wget https://github.com/sensepost/gowitness/archive/refs/tags/2.4.1.tar.gz
-tar -xvf 2.4.1.tar.gz
-rm 2.4.1.tar.gz
-cd gowitness-2.4.1
+wget https://github.com/sensepost/gowitness/archive/refs/tags/2.5.0.tar.gz
+tar -xvf 2.5.0.tar.gz
+rm 2.5.0.tar.gz
+cd gowitness-2.5.0
 go build
