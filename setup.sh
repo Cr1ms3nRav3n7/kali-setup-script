@@ -14,12 +14,14 @@ cd /opt
 git clone https://github.com/Fortra/impacket.git
 cd /impacket
 python3 setup.py install
+pip3 install -r requirements.txt
 
 #Install more tools
 
 gem install evil-winrm
 apt install pipx -y
 pipx install donpapi
+pipx ensurepath
 
 cd /opt
 git clone https://github.com/dirkjanm/PKINITtools.git
