@@ -12,7 +12,7 @@ chmod +x kerbrute_linux_amd64
 #Install impacket tools
 cd /opt
 git clone https://github.com/Fortra/impacket.git
-cd /impacket
+cd /opt/impacket
 python3 setup.py install
 pip3 install -r requirements.txt
 
