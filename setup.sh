@@ -14,7 +14,7 @@ cd /opt
 git clone https://github.com/Fortra/impacket.git
 cd /opt/impacket
 python3 setup.py install
-pip3 install -r requirements.txt
+pip3 install -r requirements.txt --break-system-packages
 
 #Install more tools
 
@@ -44,8 +44,8 @@ git clone https://github.com/trustedsec/SeeYouCM-Thief
 apt install libpcap-dev -y && pip3 install Cython && pip3 install python-libpcap
 apt install python3.9 -y
 apt install python3.9-dev -y
-pip install python-nmap
-pip install mitm6
+pip install python-nmap --break-system-packages
+pip install mitm6 --break-system-packages
 
 cd /opt/cython
 python3.9 setup.py build && python3.9 setup.py install
