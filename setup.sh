@@ -76,3 +76,6 @@ tar -xvf 2.5.0.tar.gz
 rm 2.5.0.tar.gz
 cd gowitness-2.5.0
 go build
+
+apt remove nano
+apt install neovim
