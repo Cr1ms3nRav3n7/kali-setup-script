@@ -41,7 +41,7 @@ git clone https://github.com/lgandx/PCredz.git
 git clone https://github.com/cython/cython.git
 git clone https://github.com/caizhengxin/python-libpcap.git
 git clone https://github.com/trustedsec/SeeYouCM-Thief
-apt install libpcap-dev -y && pip3 install Cython && pip3 install python-libpcap
+apt install libpcap-dev -y && pip3 install Cython --break-system-packages && pip3 install python-libpcap --break-system-packages
 apt install python3.9 -y
 apt install python3.9-dev -y
 pip install python-nmap --break-system-packages
@@ -77,5 +77,5 @@ rm 2.5.0.tar.gz
 cd gowitness-2.5.0
 go build
 
-apt remove nano
-apt install neovim
+apt remove nano -y
+apt install neovim -y
