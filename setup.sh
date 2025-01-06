@@ -1,7 +1,5 @@
 #/bin/bash
 
-apt update && apt upgrade -y
-
 cd /opt
 #Get kerbrute binary
 mkdir /opt/kerbrute
