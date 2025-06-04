@@ -26,7 +26,6 @@ git clone https://github.com/dirkjanm/PKINITtools.git
 git clone https://github.com/dirkjanm/ldapdomaindump.git
 git clone https://github.com/dirkjanm/PrivExchange.git
 git clone https://github.com/NotMedic/NetNTLMtoSilverTicket.git
-git clone https://github.com/Cr1ms3nRav3n/Valkyrie.git
 git clone https://github.com/topotam/PetitPotam.git
 git clone https://github.com/Hackndo/lsassy.git
 git clone https://github.com/zyn3rgy/LdapRelayScan.git
@@ -42,8 +41,13 @@ git clone https://github.com/trustedsec/SeeYouCM-Thief
 apt install libpcap-dev -y && pip3 install Cython --break-system-packages && pip3 install python-libpcap --break-system-packages
 apt install python3.9 -y
 apt install python3.9-dev -y
-pip install python-nmap --break-system-packages
 pip install mitm6 --break-system-packages
+
+#Get Valk binary
+cd /opt
+mkdir Valkyrie
+cd Valkyrie
+wget https://github.com/Dirkenhymer/Valkyrie-2/releases/download/v0.1.3-beta/valk2
 
 cd /opt/cython
 python3.9 setup.py build && python3.9 setup.py install
