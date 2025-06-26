@@ -20,7 +20,7 @@ gem install evil-winrm
 apt install pipx -y
 pipx install donpapi
 pipx ensurepath
-apt install better cap -y
+apt install bettercap -y
 
 cd /opt
 git clone https://github.com/dirkjanm/PKINITtools.git
@@ -50,10 +50,10 @@ cd Valkyrie
 wget https://github.com/Dirkenhymer/Valkyrie-2/releases/download/v0.1.3-beta/valk2
 
 cd /opt/cython
-python3.9 setup.py build && python3.9 setup.py install
+python3 setup.py build && python3 setup.py install
 
 cd /opt/python-libpcap
-python3.9 setup.py build && python3.9 setup.py install
+python3 setup.py build && python3 setup.py install
 
 cd /opt/lsassy
 python3 setup.py install
@@ -84,6 +84,4 @@ mkdir /opt/ADCS_Sweeper
 
 cd /opt/ADCS_Sweeper
 
-wget https://github.com/Cr1ms3nRav3n/ADCS-Sweeper/releases/tag/published/adcs
-
-echo "Check your tools WingDing!"
+wget https://github.com/Cr1ms3nRav3n7/ADCS-Sweeper/releases/tag/published/adcs
