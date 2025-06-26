@@ -20,6 +20,7 @@ gem install evil-winrm
 apt install pipx -y
 pipx install donpapi
 pipx ensurepath
+apt install better cap -y
 
 cd /opt
 git clone https://github.com/dirkjanm/PKINITtools.git
@@ -29,7 +30,6 @@ git clone https://github.com/NotMedic/NetNTLMtoSilverTicket.git
 git clone https://github.com/topotam/PetitPotam.git
 git clone https://github.com/Hackndo/lsassy.git
 git clone https://github.com/zyn3rgy/LdapRelayScan.git
-git clone https://github.com/ly4k/Certipy.git
 git clone https://github.com/fox-it/BloodHound.py.git
 git clone https://github.com/epi052/feroxbuster.git
 git clone https://github.com/lgandx/Responder.git
@@ -41,7 +41,7 @@ git clone https://github.com/trustedsec/SeeYouCM-Thief
 apt install libpcap-dev -y && pip3 install Cython --break-system-packages && pip3 install python-libpcap --break-system-packages
 apt install python3.9 -y
 apt install python3.9-dev -y
-pip install mitm6 --break-system-packages
+apt install mitm6
 
 #Get Valk binary
 cd /opt
@@ -58,8 +58,7 @@ python3.9 setup.py build && python3.9 setup.py install
 cd /opt/lsassy
 python3 setup.py install
 
-cd /opt/Certipy
-python3 setup.py install
+apt install certipy-ad
 
 cd /opt/BloodHound.py
 python3 setup.py install
@@ -80,3 +79,11 @@ cd gowitness-2.5.0
 go build
 
 apt install neovim -y
+
+mkdir /opt/ADCS_Sweeper
+
+cd /opt/ADCS_Sweeper
+
+wget https://github.com/Cr1ms3nRav3n/ADCS-Sweeper/releases/tag/published/adcs
+
+echo "Check your tools WingDing!"
