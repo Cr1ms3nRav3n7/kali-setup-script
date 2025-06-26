@@ -80,8 +80,3 @@ go build
 
 apt install neovim -y
 
-mkdir /opt/ADCS_Sweeper
-
-cd /opt/ADCS_Sweeper
-
-wget https://github.com/Cr1ms3nRav3n7/ADCS-Sweeper/releases/tag/published/adcs
