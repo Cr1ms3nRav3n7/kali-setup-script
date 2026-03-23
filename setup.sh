@@ -1,6 +1,7 @@
 #/bin/bash
 apt install git -y
 apt install wget -y
+apt install tmux -y
 
 cd /opt
 #Get kerbrute binary
@@ -57,7 +58,7 @@ python3 setup.py build && python3 setup.py install
 cd /opt/lsassy
 python3 setup.py install
 
-apt install certipy-ad
+apt install certipy-ad -y
 
 cd /opt/BloodHound.py
 python3 setup.py install
