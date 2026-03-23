@@ -48,6 +48,7 @@ cd /opt
 mkdir Valkyrie
 cd Valkyrie
 wget https://github.com/Dirkenhymer/Valkyrie-2/releases/download/v0.1.3-beta/valk2
+chmod +x valk2
 
 #cd /opt/cython
 #python3 setup.py build && python3 setup.py install
