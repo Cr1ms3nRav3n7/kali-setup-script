@@ -15,6 +15,7 @@ chmod +x kerbrute_linux_amd64
 gem install evil-winrm
 apt install pipx -y
 pipx install donpapi
+pipx ensurepath
 apt install bettercap -y
 pipx install impacket
 pipx ensurepath
