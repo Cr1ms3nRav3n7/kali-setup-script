@@ -1,4 +1,5 @@
 #/bin/bash
+apt install git
 
 cd /opt
 #Get kerbrute binary
