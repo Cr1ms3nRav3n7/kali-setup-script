@@ -1,5 +1,6 @@
 #/bin/bash
-apt install git
+apt install git -y
+apt install wget -y
 
 cd /opt
 #Get kerbrute binary
@@ -16,7 +17,6 @@ pipx install donpapi
 pipx ensurepath
 apt install bettercap -y
 pipx install impacket -y
-apt install wget -y
 
 
 cd /opt
