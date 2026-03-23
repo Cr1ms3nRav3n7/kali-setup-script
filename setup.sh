@@ -8,13 +8,6 @@ cd /opt/kerbrute
 wget https://github.com/ropnop/kerbrute/releases/download/v1.0.3/kerbrute_linux_amd64
 chmod +x kerbrute_linux_amd64
 
-#Install impacket tools
-cd /opt
-git clone https://github.com/Fortra/impacket.git
-cd /opt/impacket
-python3 setup.py install
-pip3 install -r requirements.txt --break-system-packages
-
 #Install more tools
 
 gem install evil-winrm
@@ -22,6 +15,9 @@ apt install pipx -y
 pipx install donpapi
 pipx ensurepath
 apt install bettercap -y
+pipx install impacket -y
+apt install wget -y
+
 
 cd /opt
 git clone https://github.com/dirkjanm/PKINITtools.git
@@ -39,11 +35,13 @@ git clone https://github.com/lgandx/PCredz.git
 git clone https://github.com/cython/cython.git
 git clone https://github.com/caizhengxin/python-libpcap.git
 git clone https://github.com/trustedsec/SeeYouCM-Thief
-apt install libpcap-dev -y && pip3 install Cython --break-system-packages && pip3 install python-libpcap --break-system-packages
+apt install libpcap-dev -y
+apt install cython3 -y
 apt install python3.9 -y
 apt install python3.9-dev -y
-apt install mitm6
-apt install python3-aioquic
+apt install mitm6 -y
+apt install python3-aioquic -y
+apt install python3-pcapy -y
 
 #Get Valk binary
 cd /opt
@@ -69,16 +67,14 @@ cd /opt/ldapdomaindump
 chmod +x ldapdomaindump.py
 
 #Install gowitness
-cd /opt
-apt install golang -y
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 apt install ./google-chrome-stable_current_amd64.deb -y
 rm google-chrome-stable_current_amd64.deb
-wget https://github.com/sensepost/gowitness/archive/refs/tags/2.5.0.tar.gz
-tar -xvf 2.5.0.tar.gz
-rm 2.5.0.tar.gz
-cd gowitness-2.5.0
-go build
+cd /root/
+wget https://go.dev/dl/go1.26.1.linux-amd64.tar.gz
+tar -xvf go1.26.1.linux-amd64.tar.gz
+rm go1.26.1.linux-amd64.tar.gz
+go install github.com/sensepost/gowitness@latest
 
 apt install neovim -y
 
