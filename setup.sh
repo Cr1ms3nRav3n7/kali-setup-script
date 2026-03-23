@@ -42,6 +42,7 @@ apt install libpcap-dev -y && pip3 install Cython --break-system-packages && pip
 apt install python3.9 -y
 apt install python3.9-dev -y
 apt install mitm6
+apt install python3-aioquic
 
 #Get Valk binary
 cd /opt
