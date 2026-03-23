@@ -14,10 +14,9 @@ chmod +x kerbrute_linux_amd64
 gem install evil-winrm
 apt install pipx -y
 pipx install donpapi
-pipx ensurepath
 apt install bettercap -y
-pipx install impacket -y
-
+pipx install impacket
+pipx ensurepath
 
 cd /opt
 git clone https://github.com/dirkjanm/PKINITtools.git
@@ -37,8 +36,8 @@ git clone https://github.com/caizhengxin/python-libpcap.git
 git clone https://github.com/trustedsec/SeeYouCM-Thief
 apt install libpcap-dev -y
 apt install cython3 -y
-apt install python3.9 -y
-apt install python3.9-dev -y
+#apt install python3.9 -y
+#apt install python3.9-dev -y
 apt install mitm6 -y
 apt install python3-aioquic -y
 apt install python3-pcapy -y
@@ -49,8 +48,8 @@ mkdir Valkyrie
 cd Valkyrie
 wget https://github.com/Dirkenhymer/Valkyrie-2/releases/download/v0.1.3-beta/valk2
 
-cd /opt/cython
-python3 setup.py build && python3 setup.py install
+#cd /opt/cython
+#python3 setup.py build && python3 setup.py install
 
 cd /opt/python-libpcap
 python3 setup.py build && python3 setup.py install
