@@ -74,6 +74,7 @@ cd /root/
 wget https://go.dev/dl/go1.26.1.linux-amd64.tar.gz
 tar -xvf go1.26.1.linux-amd64.tar.gz
 rm go1.26.1.linux-amd64.tar.gz
+export PATH=$PATH:/root/go/bin
 go install github.com/sensepost/gowitness@latest
 
 apt install neovim -y
