@@ -2,6 +2,7 @@
 apt install git -y
 apt install wget -y
 apt install tmux -y
+apt install nmap -y
 
 cd /opt
 #Get kerbrute binary
