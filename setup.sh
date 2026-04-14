@@ -3,6 +3,7 @@ apt install git -y
 apt install wget -y
 apt install tmux -y
 apt install nmap -y
+apt install proxychains4 -y
 
 cd /opt
 #Get kerbrute binary
